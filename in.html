@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Aloula Fesseha Afeworki</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <h1>Aloula Fesseha Afeworki</h1>
+        <p>Développeur Web & Mobile - Passionné par le Back-End et les Bases de Données</p>
+    </section>
+
+    <section id="about">
+        <h2>À Propos de Moi</h2>
+        <p>Développeur Web et Mobile en formation chez Simplon, spécialisé en PHP, MySQL et développement full-stack.</p>
+        <p>Après une formation en économie internationale, j’ai décidé de me réorienter vers le développement web. J’aime particulièrement travailler avec les bases de données et structurer des systèmes performants et sécurisés.</p>
+        <p>Curieux et autonome, je relève des défis techniques et explore sans cesse de nouvelles technologies.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Compétences</h2>
+        <div class="skill-bar">
+            <span><i class="fab fa-php"></i> PHP (procédural & orienté objet)</span>
+            <div class="progress" data-width="80%"></div>
+        </div>
+        <div class="skill-bar">
+            <span><i class="fas fa-database"></i> MySQL & SQL</span>
+            <div class="progress" data-width="90%"></div>
+        </div>
+        <div class="skill-bar">
+            <span><i class="fab fa-js"></i> JavaScript (DOM, événements)</span>
+            <div class="progress" data-width="70%"></div>
+        </div>
+        <div class="skill-bar">
+            <span><i class="fab fa-html5"></i> HTML5 & CSS3</span>
+            <div class="progress" data-width="85%"></div>
+        </div>
+        <div class="skill-bar">
+            <span><i class="fas fa-server"></i> API REST</span>
+            <div class="progress" data-width="75%"></div>
+        </div>
+        <div class="skill-bar">
+            <span><i class="fab fa-git-alt"></i> Git & GitHub</span>
+            <div class="progress" data-width="80%"></div>
+        </div>
+        <div class="skills-demo">
+            <pre><code>SELECT * FROM skills WHERE developer = 'Aloula';</code></pre>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projets</h2>
+        <div class="project">
+            <h3>Requêtes SQL pour SpotiFish</h3>
+            <p>Développement de requêtes SQL optimisées pour extraire des données musicales.</p>
+            <pre><code>SELECT artist, COUNT(*) FROM tracks GROUP BY artist;</code></pre>
+            <a href="#" class="project-link">Voir le projet</a>
+        </div>
+        <div class="project">
+            <h3>Blog en PHP procédural</h3>
+            <p>Un blog simple avec gestion d’articles et commentaires sécurisés.</p>
+            <a href="https://github.com/Aloula96/blog-php" target="_blank" class="project-link">Voir le code</a>
+        </div>
+        <div class="project">
+            <h3>Jeu en JavaScript</h3>
+            <p>Un jeu interactif avec manipulation du DOM et événements.</p>
+            <a href="#" class="project-link">Voir le projet</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-container">
+            <p class="social-link">
+                <i class="fas fa-envelope"></i>
+                <span>Email:</span> <a href="mailto:Aloula.afewerki@gmail.com">Aloula.afewerki@gmail.com</a>
+            </p>
+            <p class="social-link">
+                <i class="fab fa-github"></i>
+                <span>GitHub:</span> <a href="https://github.com/Aloula96" target="_blank">Mon GitHub</a>
+            </p>
+            <p class="social-link">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn:</span> <a href="#">Mon LinkedIn</a>
+            </p>
+        </div>
+        <form action="contact.php" method="post">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>© 2025 Aloula Fesseha Afeworki - Tous droits réservés.</p>
+    </footer>
+    <button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
+    <script src="script.js"></script>
+</body>
+</html>
